@@ -4,7 +4,11 @@
 
 .vscode/
 .pytest_cache/
+tests/__pycache__/
 venv/
+bundles/
+ios/build/
+wheelhouse/
 
 # Xcode
 #

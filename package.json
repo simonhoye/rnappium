@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "source venv/bin/activate && LOCATION='local' py.test && deactivate",
+    "test": "source venv/bin/activate && LOCATION='local' TYPE='android' py.test && deactivate",
+    "test-ios": "source venv/bin/activate && LOCATION='local' TYPE='ios' py.test && deactivate",
     "appium": "appium",
-    "appium:doctor": "appium-doctor"
+    "appium:doctor": "appium-doctor",
+    "bundle-ios-artifact": "scripts/bundle-ios-artifact"
   },
   "dependencies": {
     "react": "16.3.1",
