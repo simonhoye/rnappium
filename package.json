@@ -8,7 +8,8 @@
     "test-ios": "source venv/bin/activate && LOCATION='local' TYPE='ios' py.test && deactivate",
     "appium": "appium",
     "appium:doctor": "appium-doctor",
-    "bundle-ios-artifact": "scripts/bundle-ios-artifact"
+    "bundle-ios-artifact": "scripts/bundle-ios-artifact",
+    "package-tests": "scripts/package-tests"
   },
   "dependencies": {
     "react": "16.3.1",
