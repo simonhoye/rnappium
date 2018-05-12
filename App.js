@@ -12,6 +12,7 @@ import {
   Text,
   View
 } from 'react-native';
+import testID from 'react-native-testid';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -28,12 +29,12 @@ export default class App extends Component<Props> {
 
   onPress = () => this.setState({ counter: this.state.counter + 1 })
   render() {
-    return <View style={styles.container} accessibilityLabel="testview" testID="testview">
+    return <View style={styles.container} {...testID("testview")}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-        <Text accessibilityLabel="counter" testID="counter">{this.state.counter}</Text>
-        <Button onPress={this.onPress} title="Press me" accessibilityLabel="button" testID="button" />
+      <Text {...testID("counter")}>{this.state.counter}</Text>
+      <Button onPress={this.onPress} title="Press me" {...testID("button")} />
       </View>;
   }
 }

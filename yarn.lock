@@ -5805,6 +5805,10 @@ react-is@^16.3.1:
   version "16.3.2"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.3.2.tgz#f4d3d0e2f5fbb6ac46450641eb2e25bf05d36b22"
 
+react-native-testid@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/react-native-testid/-/react-native-testid-1.0.0.tgz#14b4518ce217817a69e316b9f5da7420fc71342e"
+
 react-native@0.55.4:
   version "0.55.4"
   resolved "https://registry.npmjs.org/react-native/-/react-native-0.55.4.tgz#eecffada3750a928e2ddd07cf11d857ae9751c30"

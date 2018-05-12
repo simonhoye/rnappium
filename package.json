@@ -9,11 +9,13 @@
     "appium": "appium",
     "appium:doctor": "appium-doctor",
     "bundle-ios-artifact": "scripts/bundle-ios-artifact",
+    "bundle-android-artifact": "scripts/bundle-android-artifact",
     "package-tests": "scripts/package-tests"
   },
   "dependencies": {
     "react": "16.3.1",
-    "react-native": "0.55.4"
+    "react-native": "0.55.4",
+    "react-native-testid": "^1.0.0"
   },
   "devDependencies": {
     "appium": "^1.8.0",
