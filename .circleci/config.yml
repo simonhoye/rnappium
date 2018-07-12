@@ -8,7 +8,7 @@ jobs:
 
     # Specify the Xcode version to use
     macos:
-      xcode: "8.3.3"
+      xcode: "9.4.3"
 
     steps:
       - checkout
@@ -16,7 +16,7 @@ jobs:
       # Install CocoaPods
       - run:
           name: Install CocoaPods
-          command: pod install
+          command: cd ios && pod install
 
       # Build the app and run tests
       - run:
